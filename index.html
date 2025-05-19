@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cricket Stats</title>
+</head>
+<body>
+    <h1> Welcome to Cricket Stats</h1>
+    <p> Here you can find all the stats of batters and bowlers in TATA IPL 2025</p>
+        <img src="./batter1.png" alt="batters" height="200px" width="200px">
+        <h2> Batters </h2>
+    <table>
+        <thead>
+        <th> Position</th>
+        <th> Player Name </th>
+        <th> Team </th>
+        <th> Runs</th>
+        </thead>
+        <tbody>
+            <td> 1 </td>
+            <td> Sai Sudharshan </td>
+            <td> Gujarat Titans </td>
+            <td> 617 </td>
+        </tbody>
+         <tbody>
+            <td> 2 </td>
+            <td> S Gill </td>
+            <td> Gujarat Titans </td>
+            <td> 601 </td>
+        </tbody>
+         <tbody>
+            <td> 3 </td>
+            <td> SKY </td>
+            <td> Mumbai Indians </td>
+            <td> 510 </td>
+        </tbody>
+         <tbody>
+            <td> 4 </td>
+            <td> Virat Kohli </td>
+            <td> Royal Challengers Bengaluru </td>
+            <td> 505 </td>
+        </tbody>
+         <tbody>
+            <td> 5 </td>
+            <td> Jos Buttler </td>
+            <td> Gujarat Titans </td>
+            <td> 500 </td>
+        </tbody>
+         <tbody>
+            <td> 6 </td>
+            <td> KL Rahul </td>
+            <td> Delhi Capitals </td>
+            <td> 493 </td>
+        </tbody>
+         <tbody>
+            <td> 7 </td>
+            <td> P. Singh </td>
+            <td> Punjab Kings</td>
+            <td> 458 </td>
+        </tbody>
+         <tbody>
+            <td> 8 </td>
+            <td> S.Iyer </td>
+            <td> Punjab Kings </td>
+            <td> 435  </td>
+        </tbody>
+         <tbody>
+            <td> 9 </td>
+            <td> Nicolos Pooran </td>
+            <td> Lucknow Super Giants </td>
+            <td> 410 </td>
+        </tbody>
+         <tbody>
+            <td> 10 </td>
+            <td> Riyan Parag</td>
+            <td> Rajasthan Royals </td>
+            <td> 390 </td>
+        </tbody>
+    </table>
+    <img class = "bowleri image" src="./bowler1.png" alt="bowlers" height="200px" width="200px">
+    <h2> Bowlers</h2>
+    <table>
+        <thead>
+        <th> Position</th>
+        <th> Player Name </th>
+        <th> Team </th>
+        <th> Wickets</th>
+        </thead>
+        <tbody>
+            <td> 1 </td>
+            <td> P.Krishna</td>
+            <td> Gujarat Titans</td>
+            <td> 21 </td>
+        </tbody>
+        <tbody>
+             <td> 2</td>
+            <td> N.Ahmed</td>
+            <td> Chennai Super Kings</td>
+            <td> 20 </td>
+        </tbody>
+        <tbody>
+             <td> 3 </td>
+            <td> Josh Hazelwood</td>
+            <td> Royal Challengers Bengaluru</td>
+            <td> 18 </td>
+        </tbody>
+        <tbody>
+             <td> 4 </td>
+            <td> T.Bould</td>
+            <td> Mumbai Indians</td>
+            <td> 18 </td>
+        </tbody>
+        <tbody>
+             <td> 5 </td>
+            <td> V.Chkravarthya</td>
+            <td> Kolkata Knight Riders</td>
+            <td> 17 </td>
+        </tbody>
+        <tbody>
+             <td> 6 </td>
+            <td> Arshdeep Singh</td>
+            <td> Punjab Kings</td>
+            <td> 16 </td>
+  </tbody>
+        <tbody>
+           <td> 7 </td>
+            <td>V.Arora</td>
+            <td>Kolkata Knight Riders</td>
+            <td> 16</td>
+        </tbody>
+            <td> 8 </td>
+            <td> R.S.Kishore</td>
+            <td> Gujarat Titans</td>
+            <td> 15 </td>
+    </tbody>
+    <tbody>
+             <td> 9 </td>
+            <td> M.Siraj</td>
+            <td> Gujarat Titans</td>
+            <td> 15 </td>
+</tbody>
+             <td> 10 </td>
+            <td> H.Rana </td>
+            <td> Kolkata Knight Riders</td>
+            <td> 15 </td>
+        </tbody>
+    </table>
+    <div class="row">
+      <footer>
+        <div class="col-md-7">
+        <p> The stats will refresh on Every match day at midnight after game , you can come and check them here </p>
+    </div>
+    <div class="col-md-5">
+        <p> All credits and details belongs to &#64TataIPL </p>
+    </div>
+    </div>
+    </footer>
+     <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tables = document.querySelectorAll("table");
+
+      tables.forEach((table) => {
+        const rows = table.querySelectorAll("tbody tr");
+        rows.forEach((row) => {
+          const firstCell = row.querySelector("td");
+          if (firstCell && firstCell.textContent.trim() === "1") {
+            row.style.backgroundColor = "#ffff99"; // light yellow
+            row.style.fontWeight = "bold";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
